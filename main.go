@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"github.com/sirupsen/logrus"
 	"google.golang.org/grpc"
+	"google.golang.org/grpc/credentials/insecure"
 
 	"github.com/VadimGossip/grpsProductsServer/gen/products"
-	"google.golang.org/grpc/credentials/insecure"
 )
 
 const (
@@ -26,13 +26,27 @@ func main() {
 	ctx := context.Background()
 
 	client := products.NewProductsServiceClient(conn)
-	response, err := client.Fetch(ctx, &products.FetchRequest{Url: url})
+	fetchResponse, err := client.Fetch(ctx, &products.FetchRequest{Url: url})
 	if err != nil {
 		logrus.WithFields(logrus.Fields{
 			"handler": "fetch",
 		}).Error(err)
 	}
+	fmt.Println(fetchResponse.Status)
 
-	fmt.Println(response.Status)
+	listResponse, err := client.List(ctx, &products.ListRequest{
+		SortField:    products.SortingField_product_name,
+		SortType:     products.SortingType_asc,
+		PagingOffset: 30,
+		PagingLimit:  20,
+	})
+	if err != nil {
+		logrus.WithFields(logrus.Fields{
+			"handler": "list",
+		}).Error(err)
+	}
 
+	for idx := range listResponse.Product {
+		fmt.Println(listResponse.Product[idx])
+	}
 }
