@@ -26,13 +26,12 @@ func main() {
 	ctx := context.Background()
 
 	client := products.NewProductsServiceClient(conn)
-	fetchResponse, err := client.Fetch(ctx, &products.FetchRequest{Url: url})
+	_, err = client.Fetch(ctx, &products.FetchRequest{Url: url})
 	if err != nil {
 		logrus.WithFields(logrus.Fields{
 			"handler": "fetch",
 		}).Error(err)
 	}
-	fmt.Println(fetchResponse.Status)
 
 	listResponse, err := client.List(ctx, &products.ListRequest{
 		SortField:    products.SortingField_product_name,

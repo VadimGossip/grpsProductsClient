@@ -3,6 +3,12 @@ cloud.google.com/go v0.34.0/go.mod h1:aQUYkXzVsufM+DwF1aE+0xfcU+56JwCaLick0ClmMT
 github.com/BurntSushi/toml v0.3.1/go.mod h1:xHWCNGjB5oqiDr8zfno3MHue2Ht5sIBksp03qcyfWMU=
 github.com/VadimGossip/grpsProductsServer v0.0.0-20220914175941-4302e14953ba h1:LTkRXcMFI+chA0Y//+iec1ITix/WDZMkhGBesy1wSuQ=
 github.com/VadimGossip/grpsProductsServer v0.0.0-20220914175941-4302e14953ba/go.mod h1:PdcFIuN7BHrreIieQALmF6+8R3omcY/2SXlm4NitIxY=
+github.com/VadimGossip/grpsProductsServer v0.0.0-20220919102111-4557791db985 h1:f5DwB3YqGCE32iE61wiUUsFCcEi1950V6QdmIu9yNIc=
+github.com/VadimGossip/grpsProductsServer v0.0.0-20220919102111-4557791db985/go.mod h1:PdcFIuN7BHrreIieQALmF6+8R3omcY/2SXlm4NitIxY=
+github.com/VadimGossip/grpsProductsServer v0.0.0-20220919114746-c8688498a097 h1:cuM9tetI/q/kJiaeljSInBGCDzDE6/W+Ojnn44NIxQE=
+github.com/VadimGossip/grpsProductsServer v0.0.0-20220919114746-c8688498a097/go.mod h1:PdcFIuN7BHrreIieQALmF6+8R3omcY/2SXlm4NitIxY=
+github.com/VadimGossip/grpsProductsServer v1.0.1 h1:1PwBd/255C4m8IiGItQE9L2achEoKiqBNvkjnvHrG7I=
+github.com/VadimGossip/grpsProductsServer v1.0.1/go.mod h1:PdcFIuN7BHrreIieQALmF6+8R3omcY/2SXlm4NitIxY=
 github.com/antihax/optional v1.0.0/go.mod h1:uupD/76wgC+ih3iEmQUL+0Ugr19nfwCT1kdvxnR2qWY=
 github.com/census-instrumentation/opencensus-proto v0.2.1/go.mod h1:f6KPmirojxKA12rnyqOA5BBL4O983OfeGPqjHWSTneU=
 github.com/cespare/xxhash/v2 v2.1.1/go.mod h1:VGX0DQ3Q6kWi7AoAeZDth3/j3BFtOZR5XLFGgcrjCOs=
