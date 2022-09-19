@@ -1,5 +1,5 @@
 # grpsProductsClient
-gRPC client for https://github.com/VadimGossip/grpsProductsServer
+gRPC client example for https://github.com/VadimGossip/grpsProductsServer
 
 ## Available features:
 - Fetch(URL) - requests an external CSV file with a list of products at an external address.
